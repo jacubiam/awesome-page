@@ -1,14 +1,77 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
     margin: 0;
-}
-nav{
-    background-color:black ;
-    display: flex;
-    justify-content: space-between;
-    height: 20vh;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    color: white;
 }
 
-.logo{
-    width: 150px;
-    height: 150px;
+body{
+    background-color: rgb(255, 255, 255);
 }
+
+nav{
+    background-color:rgb(35, 48, 74) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 233px;
+    box-shadow: 0 25px 100px rgba(0, 0, 0, 0.7);
+}
+
+.navbar{
+    display: flex;
+}
+
+
+
+.navbar img{
+    height: 250px;
+    width: auto;
+    object-fit:cover ;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+
+
+.box{
+    margin-right: 275px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width:min-content;
+    gap: 20px;
+    height: 125px;
+    text-align: center;
+}
+
+
+.box button{
+    width: 360px;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box button:hover{
+    color: rgba(255, 255, 255, 0.825);
+    background-color: rgb(29, 39, 61);
+    text-decoration: none;
+}
+
+.iniciar_s button{
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 600;
+    color: rgb(35, 48, 74);
+    width: 450px;
+    margin-left: 50px;
+}
+
