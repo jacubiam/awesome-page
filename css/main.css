@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color:black ;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
