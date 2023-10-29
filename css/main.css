@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Roboto', sans-serif; */
+   
     font-family: 'Rubik', sans-serif;
     color: white;
 }
@@ -17,45 +17,40 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 233px;
-    box-shadow: 0 25px 100px rgba(0, 0, 0, 0.7);
+    height: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
-.navbar{
-    display: flex;
-}
-
 
 
 .navbar img{
-    height: 250px;
+    height: 75px;
     width: auto;
     object-fit:cover ;
-    margin-left: 400px;
+    margin-left: 50px;
     cursor: pointer;
 }
 
 
 
 .box{
-    margin-right: 275px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width:min-content;
-    gap: 20px;
-    height: 125px;
+    width:533px;
+    height: 30px;
     text-align: center;
 }
 
 
 .box button{
-    width: 360px;
+    width: 100px;
     height: 100%;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
     background: none;
-    border: none;
-    border-radius: 50px;
+    border-style:none;
+    
+    border-radius: 40px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -63,7 +58,7 @@ nav{
 .box button:hover{
     color: rgba(255, 255, 255, 0.825);
     background-color: rgb(29, 39, 61);
-    text-decoration: none;
+    
 }
 
 .iniciar_s button{
@@ -71,7 +66,8 @@ nav{
     background-color: white;
     font-weight: 600;
     color: rgb(35, 48, 74);
-    width: 450px;
-    margin-left: 50px;
+    width: 100px;
+    margin-left: 20px;
 }
 
+ /* font-family: 'Roboto', sans-serif; */
