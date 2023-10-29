@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start Main-Hero Styles*/
+.main-container{
+    background-color: #13161c;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    height: 75vh;
+    align-content: center;
+    align-items:center;
+}
+
+.hero{
+    width: 992px;
+    margin: 0 0.8rem;
+    color: #eff3f8;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3rem;  
+}
+
+.hero h1 .hero-span-h1{
+    font-weight:300;
+    color: #0a9fe9;
+}
+
+.hero h1 .hero-span-brand{
+    display: inline-block;
+}
+
+.hero-subtitle{
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.hero-search-text{
+    margin-bottom: 1rem;
+}
+
+.hero-form{
+    display: flex;
+    background-color: #1e2229;
+    border: 1px solid #dee1e4;
+    border-radius: 8px;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s;
+}
+
+.hero-form:hover{
+    border: 1px solid #0a9fe9;
+}
+
+.hero-form:focus-within{
+    border: 1px solid #0a9fe9;
+    background-color: #000;
+}
+
+.hero-form-input{
+    max-height: 100%;
+    color: #c4c8ce;
+    flex: 100%;
+    background: transparent;
+    border: none;
+    padding: 1rem 1.5rem;
+    outline: none;
+    font-size: inherit;
+}
+
+.hero-search-btn {
+    background: transparent;
+    cursor:pointer;
+    border: none;
+    width: 20px;
+    height: 30px;
+    margin-right: 2rem;
+}
+
+.hero-search-img{
+    height: 20px;
+    width: 30px;
+    object-fit: contain;
+}
+
+/*Main Media-Queries*/
+@media screen and (min-width:992px) {
+    .main-container{
+        justify-content: center;
+    }
+
+    .hero{
+        width: 800px;
+    }
+
+    .hero h1 .hero-span-h1{
+        display:block;
+    }
+ 
+    .hero-subtitle{
+        width: 315px;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+    }
+
+    .hero-form{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .main-container{
+        background-image: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698606573/Module1/codes_cktzsu.png),url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698606573/Module1/codes_cktzsu.png);
+        background-size: 550px;
+        background-repeat: no-repeat;
+        background-position: calc(0% + -350px), calc(100% + +350px);
+    }
+
+    .hero h1{
+        font-size: 4rem;  
+    }
+
+    .hero-subtitle{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .main-container{
+        background-position: calc(0% + -310px), calc(100% + +310px);
+    }
+}
+
+@media screen and (min-width:1500px){
+    .main-container{
+        background-position: calc(0% + -275px), calc(100% + +275px);
+    }
+}
+/*End Main-hero styles*/
