@@ -109,10 +109,12 @@ nav{
     .nav_menu button{
         margin-left: 58%;
         background: none;
+        border-style:none;
         color: white;
         width: 50%;
         border-radius: 0px;
-        font-size: 12px;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .nav_menu{
@@ -128,6 +130,7 @@ nav{
 
     .iniciar_s{
         margin-bottom: 65vh;
+        
     }
 
     .nav_input:checked + .nav_menu{
