@@ -17,48 +17,49 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
+    width: 100%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: fixed;
 }
 
 
 .navbar img{
-    height: 75px;
+    height: 85px;
     width: auto;
     object-fit:cover ;
-    margin-left: 50px;
+    margin-left: 3vw;
     cursor: pointer;
 }
 
 
 
-.box{
+.nav_menu{
     margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width:533px;
-    height: 30px;
+    height: 35px;
     text-align: center;
 }
 
 
-.box button{
+.nav_menu button{
     width: 100px;
     height: 100%;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     background: none;
     border-style:none;
-    
     border-radius: 40px;
-    transition: 0.2s ease-in-out;
     cursor: pointer;
+    transition: 0.2s ease-out;
 }
 
-.box button:hover{
+.nav_menu button:hover{
     color: rgba(255, 255, 255, 0.825);
     background-color: rgb(29, 39, 61);
-    
+    transition: 0.2s ease-in;
 }
 
 .iniciar_s button{
@@ -67,6 +68,71 @@ nav{
     font-weight: 600;
     color: rgb(35, 48, 74);
     width: 100px;
-    margin-left: 20px;
+    margin-left: 1vw;
 }
- /* font-family: 'Roboto', sans-serif; */
+
+/* Responsive */
+
+.nav_label{
+    width: 40px;
+    display: flex;
+    margin-right: 3vw;
+}
+
+.nav_label img{
+    width: 30px;
+    height: 100%;
+    margin: 0;
+    align-items: start;
+}
+
+
+
+.nav_label, .nav_input{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu button:hover{
+        background-color: rgba(29, 39, 61, 0);  
+    }
+
+    .nav_menu .first{
+        margin-top: 3vh;  
+    }
+    
+    .nav_menu button{
+        margin-left: 58%;
+        background: none;
+        color: white;
+        width: 50%;
+        border-radius: 0px;
+        font-size: 12px;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 60px;
+        height: 100%;
+        background: rgba(29, 39, 61, 0.63);
+        width: 100%;
+        grid-template-columns: 1fr ;
+        clip-path: inset(0% 0% 0% 100%);
+        transition: clip-path 0.3s ease-in;
+    }
+
+    .iniciar_s{
+        margin-bottom: 65vh;
+    }
+
+    .nav_input:checked + .nav_menu{
+        clip-path: inset(0% 0% 0% 65%);
+        transition: clip-path 0.3s ease-out;
+    }
+
+}
