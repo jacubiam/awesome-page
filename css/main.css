@@ -7,6 +7,12 @@
 }
 
 /*Navbar Styles*/
+header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
 nav {
     font-family: 'Rubik', sans-serif;
     color: white;
@@ -60,7 +66,7 @@ nav {
 .iniciar_s button {
     border-radius: 50px;
     background-color: white;
-    font-weight: 600;
+    font-weight: 600 ;
     color: rgb(35, 48, 74);
     width: 100px;
     margin-left: 1vw;
@@ -86,6 +92,10 @@ nav {
     display: none;
 }
 
+.card{
+    position: static !important;
+}
+
 @media (max-width: 900px) {
     .nav_label {
         display: block;
@@ -102,12 +112,13 @@ nav {
 
     .nav_menu button {
         margin-left: 58%;
+        margin-bottom: 30px;
         background: none;
         border-style: none;
         color: white;
         width: 50%;
         border-radius: 0px;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: 300;
     }
 
@@ -139,6 +150,7 @@ nav {
     background-color: #13161c;
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
+    min-height: 600px;
     height: 75vh;
     align-content: center;
     align-items: center;
@@ -276,7 +288,7 @@ nav {
 
 @media screen and (max-width:768px) {
     .tarjetas_cursos {
-        height: 375vh;
+        height: 400vh;
     }
 }
 
