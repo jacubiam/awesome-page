@@ -256,6 +256,12 @@ nav {
     transition: 0.3s;
 }
 
+@media screen and (max-width:1200px){
+    .tarjetas_cursos{
+        height: 200vh;
+    }
+}
+
 @media screen and (max-width:575px) {
     .texto {
         flex-wrap: wrap;
